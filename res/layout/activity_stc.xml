@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StcActivity" >
+
+     <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/camera_surface_view" />
+
+    <ToggleButton
+        android:id="@+id/ioio_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/camera_surface_view"
+        android:layout_alignTop="@+id/camera_surface_view"
+        android:layout_marginTop="84dp"
+        android:text="ToggleButton" />
+
+    <ToggleButton
+        android:id="@+id/ToggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ioio_btn"
+        android:layout_alignBottom="@+id/ioio_btn"
+        android:layout_marginLeft="72dp"
+        android:layout_toRightOf="@+id/ioio_btn"
+        android:text="ToggleButton"
+        android:onClick="onStartButtonClicked" />
+
+</RelativeLayout>
